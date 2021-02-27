@@ -45,4 +45,7 @@ vi daemon.json
   "log-driver":"json-file",
   "log-opts": {"max-size":"500m", "max-file":"3"}
 }
+#重启docker服务
+systemctl daemon-reload
+systemctl restart docker
 ~~~
