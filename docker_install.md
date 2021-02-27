@@ -35,4 +35,14 @@ docker version
 #systemctl stop docke
 #yum -y remove docker-ce
 #rm -rf /var/lib/docker
+#配置阿里云镜像加速
+#创建/etc/docker目录
+#mkdir -pv /etc/docker
+vi daemon.json
+{
+  "registry-mirrors": ["自己的阿里云镜像加速地址"],
+  "live-restore": true,
+  "log-driver":"json-file",
+  "log-opts": {"max-size":"500m", "max-file":"3"}
+}
 ~~~
