@@ -1,5 +1,6 @@
 # docker_install
 docker安装脚本
+~~~
 #查看内核
 uname -r
 #查看已安装的CentOS的版本信息
@@ -34,3 +35,4 @@ docker version
 #systemctl stop docke
 #yum -y remove docker-ce
 #rm -rf /var/lib/docker
+~~~
